@@ -1,0 +1,5 @@
+launch_id,model,base_model,target_modes,state,exit_code,scaled_MASE,inference_seconds,datasets,tasks,timed_tasks
+selena_20260907T230635Z_3389,chronos2,chronos2,"multivariate,univariate",completed,0,0.6854886145419167,433.7667756350711,50,98,98
+selena_20260907T230635Z_3389,ts_icl,ts_icl,univariate,completed,0,0.7183939784284914,2777.1392631195486,50,98,98
+selena_20260907T230635Z_3389,chronos_bolt,chronos_bolt,univariate,completed,0,0.7595590358327292,957.0296028926969,50,98,98
+selena_20260907T230635Z_3389,seasonal_naive,seasonal_naive,univariate,completed,0,1.0,654.4674666400533,50,98,98

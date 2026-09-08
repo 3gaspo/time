@@ -43,7 +43,7 @@
       "total_values": 900
     }
   },
-  "launch_id": "selena_20260906T123412Z_859",
+  "launch_id": "selena_20260907T230635Z_3389",
   "model": "chronos_bolt",
-  "inference_seconds": 17.326044137123972
+  "inference_seconds": 17.429594377055764
 }
