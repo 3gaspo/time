@@ -11,7 +11,7 @@
 TIME is a task-centric time series forecasting benchmark comprising various fresh datasets, tailored for zero-shot TSFM evaluation. This codebase provides a full workflow spanning from data preprocessing to model evaluation.
 
 This maintained derivative preserves TIME's benchmark behavior while adding
-reusable consistency and runtime repairs around a focused four-model benchmark.
+reusable consistency and runtime repairs around a focused five-model benchmark.
 The complete tracked delta is listed in [Improvements](docs/IMPROVEMENTS.md).
 
 ## 📅 Update Log
@@ -45,9 +45,9 @@ uv sync
 
 The cluster launchers run the benchmark through this prepared uv environment;
 they do not create Conda environments or install packages during a Slurm job.
-The maintained runners are exactly `chronos_bolt`, `chronos2`, `ts_icl`, and
-`seasonal_naive`. All four share one prepared uv environment on each cluster,
-which must include `chronos-forecasting`, `tsicl`, and `statsforecast` before
+The maintained runners are exactly `chronos_bolt`, `chronos2`, `timesfm3`,
+`ts_icl`, and `seasonal_naive`. All five share one prepared uv environment on
+each cluster, which must include `chronos-forecasting`, `timesfm`, `tsicl`, and `statsforecast` before
 submission. Seasonal Naive passes StatsForecast's deterministic quantiles
 directly to TIME evaluation rather than resampling them. Learned-model runners never download
 weights at runtime. They require these local paths below `TIME_WEIGHTS`:
@@ -55,6 +55,7 @@ weights at runtime. They require these local paths below `TIME_WEIGHTS`:
 ```text
 chronos2/
 chronos-bolt-base/
+timesfm3/
 tsicl/tsicl-v1.ckpt
 ```
 
@@ -97,11 +98,11 @@ TIME_LOGS=./logs
 ## 🚀 Getting Started
 
 ### Model Forecasting
-We provide the code and scripts required to reproduce the maintained four-model
+We provide the code and scripts required to reproduce the maintained five-model
 benchmark.
 
 The standard cluster launch surface contains three commands. The first submits
-the four maintained foundation models plus their dependent summary. The second
+the five maintained foundation models plus their dependent summary. The second
 submits Chronos-2 on the native multivariate, independent univariate, and
 past-target-covariate channel representations. The third scans the configured
 TIME source series and test windows for non-finite or constant values and
@@ -135,9 +136,9 @@ write a joint performance/timing table after all runs complete:
 bash scripts/run_all_foundation_models.sh
 ```
 
-The cluster submission helper launches Seasonal Naive first, starts the three
+The cluster submission helper launches Seasonal Naive first, starts the four
 learned-model jobs in parallel after that baseline succeeds, and starts the
-summary with an `afterany` dependency on all four model jobs. Every cluster uses
+summary with an `afterany` dependency on all five model jobs. Every cluster uses
 its own prepared environment and local weight tree; no job installs a package
 or retrieves a checkpoint. Cluster-specific submission and synchronization
 commands remain in the local internal workflow document.
@@ -155,14 +156,14 @@ ${TIME_OUTPUTS}/channels_comparison/tasks/{case}/{model}/{target_mode}/{dataset}
 
 `target_mode` is the representation actually passed to the model:
 `univariate` or `multivariate`. `auto` selects native multivariate evaluation
-only for Chronos-2 when a dataset has multiple target channels. TS-ICL,
+for Chronos-2 and TimesFM-3 when a dataset has multiple target channels. TS-ICL,
 Chronos-Bolt, and Seasonal Naive expand target channels into independent
 univariate examples and reject an explicit multivariate request. TS-ICL can
 still mix a target with explicitly supplied covariates.
 
 `--covariate-mode future_included` requires external known covariates over the
-complete context and forecast horizon (`L+H`); Chronos-2 and TS-ICL consume
-them. Chronos-2 additionally supports
+complete context and forecast horizon (`L+H`); Chronos-2, TimesFM-3, and TS-ICL
+consume them. Chronos-2 and TimesFM-3 additionally support
 `--covariate-mode past_targets`: each target channel is forecast separately
 from its `L` observed values while the other target histories are passed as
 past-only covariates. Non-finite covariate observations are represented as
@@ -203,7 +204,7 @@ uses TIME's task-level scaled MASE: raw MASE divided by the matching Seasonal
 Naive MASE, followed by a geometric mean over tasks. Cluster summaries select
 only completed run manifests from the current launch and include terminal model
 states, so partial results cannot be mistaken for complete results or mixed
-with stale tasks. When all four model jobs completed successfully, the same
+with stale tasks. When all five model jobs completed successfully, the same
 summary job also writes the launch-filtered scaled-MASE-versus-feature SVG, joined
 data, and feature correlations below
 `foundation_models/feature_analysis/{launch_id}/`. Foundation tables live

@@ -40,7 +40,7 @@ deliberately.
   Reports expose selected, latest, distinct, and averaged repeat handling plus
   error, distinct, latest, and averaged scientific-configuration handling.
 - Narrowed the maintained benchmark surface to `chronos_bolt`, `chronos2`,
-  `ts_icl`, and `seasonal_naive`. Removed every other model adapter and runner,
+  `timesfm3`, `ts_icl`, and `seasonal_naive`. Removed every other model adapter and runner,
   including Toto, TiRex, and TimesFM 2, plus the unused non-seasonal Naive
   wrapper. Toto was removed because its exact NumPy and scikit-learn pins
   conflict with TS-ICL in the required single shared environment; TiRex is
@@ -73,13 +73,13 @@ deliberately.
 - Added one accelerator-synchronized test-loop timer used by every model
   runner. Each task stores total inference seconds in `config.json`, excluding
   model loading, dataset construction, metric computation, and result saving.
-- Added a four-model runner and CSV/Markdown summary. Every task MASE is now
+- Added a five-model runner and CSV/Markdown summary. Every task MASE is now
   divided by its matching Seasonal Naive MASE and the resulting TIME
   leaderboard ratios are geometrically averaged; timing totals require
   complete task coverage.
 - Made the dependent foundation summary generate the launch-filtered
   MASE-versus-feature SVG, joined data, and correlation table after confirming
-  that all four model jobs completed successfully. Transfer and publication
+  that all five model jobs completed successfully. Transfer and publication
   retain these compact analysis artifacts.
 - Added a compact `metrics_summary.json` beside every task result, containing
   finite aggregate metrics and coverage counts. Lightweight result transfer
@@ -95,8 +95,8 @@ deliberately.
   include run and aggregate manifests, repeat selections, and manifest history.
 - Added matching DGX and Selena Slurm fronts for each retained model plus a
   separate dependent summary front. One submission helper runs Seasonal Naive
-  first, starts the three learned-model jobs in parallel after that baseline
-  succeeds, and starts the summary after all four terminate. The report filters
+  first, starts the four learned-model jobs in parallel after that baseline
+  succeeds, and starts the summary after all five terminate. The report filters
   task artifacts by launch ID and includes each model's terminal status, so a
   failed model yields an explicit partial report rather than mixing stale
   tasks. Dataset/frequency and horizon-term loops remain sequential inside each

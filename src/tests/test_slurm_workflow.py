@@ -7,6 +7,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 MODELS = (
     "chronos_bolt",
     "chronos2",
+    "timesfm3",
     "ts_icl",
     "seasonal_naive",
 )
@@ -93,13 +94,14 @@ def main() -> None:
     mapping = (PROJECT_ROOT / "src/slurm/foundation_model_runners.sh").read_text(
         encoding="utf-8"
     )
-    assert mapping.count("    run_") == 4
+    assert mapping.count("    run_") == len(MODELS)
     assert "FOUNDATION_MODEL_COUNT" in mapping
     for model in MODELS:
         assert f"    {model}\n" in mapping
     foundation_runners = (
         "run_chronos_bolt.sh",
         "run_chronos2.sh",
+        "run_timesfm3.sh",
         "run_tsicl.sh",
         "run_seasonal_naive.sh",
     )
@@ -338,7 +340,6 @@ def main() -> None:
         "run_timesfm1.sh",
         "run_timesfm2.sh",
         "run_timesfm2p5.sh",
-        "run_timesfm3.sh",
         "run_tirex.sh",
         "run_toto.sh",
         "run_visiontspp.sh",
@@ -353,7 +354,6 @@ def main() -> None:
         "timesfm1.0.py",
         "timesfm2.0.py",
         "timesfm2.5.py",
-        "timesfm3.py",
         "tirex_model.py",
         "toto_model.py",
         "visiontspp.py",
@@ -373,6 +373,7 @@ def main() -> None:
     for experiment in (
         "chronos_bolt.py",
         "chronos2.py",
+        "timesfm3.py",
         "ts_icl.py",
         "seasonal_naive.py",
     ):

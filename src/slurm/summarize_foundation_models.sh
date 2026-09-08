@@ -58,7 +58,7 @@ for model in "${FOUNDATION_MODELS[@]}"; do
     fi
 done
 if [ "${#incomplete_models[@]}" -gt 0 ]; then
-    echo "Feature plot requires four successful model jobs; incomplete: ${incomplete_models[*]}" >&2
+    echo "Feature plot requires $FOUNDATION_MODEL_COUNT successful model jobs; incomplete: ${incomplete_models[*]}" >&2
     exit 1
 fi
 
