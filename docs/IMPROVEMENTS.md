@@ -94,14 +94,14 @@ deliberately.
   manifests list their exact run inputs. Lightweight transfer and publication
   include run and aggregate manifests, repeat selections, and manifest history.
 - Added matching DGX and Selena Slurm fronts for each retained model plus a
-  separate dependent summary front. One submission helper creates four
-  independently schedulable model jobs and starts the summary after all four
-  terminate. The report filters task artifacts by launch ID and includes each
-  model's terminal status, so a failed model yields an explicit partial report
-  rather than blocking aggregation or mixing stale tasks. Dataset/frequency
-  and horizon-term loops remain sequential inside each model allocation. Both
-  clusters emit explicit task/workflow completion records and durable status
-  files below the configured log root.
+  separate dependent summary front. One submission helper runs Seasonal Naive
+  first, starts the three learned-model jobs in parallel after that baseline
+  succeeds, and starts the summary after all four terminate. The report filters
+  task artifacts by launch ID and includes each model's terminal status, so a
+  failed model yields an explicit partial report rather than mixing stale
+  tasks. Dataset/frequency and horizon-term loops remain sequential inside each
+  model allocation. Both clusters emit explicit task/workflow completion
+  records and durable status files below the configured log root.
 - Added one channel-comparison submission helper that launches Chronos-2 on
   every multivariate dataset in native multivariate, independent univariate,
   and past-target-covariate modes under one shared launch ID. Each mode remains

@@ -135,11 +135,12 @@ write a joint performance/timing table after all runs complete:
 bash scripts/run_all_foundation_models.sh
 ```
 
-The cluster submission helper launches one independently schedulable job per
-model and a summary job with an `afterany` dependency on all four. Every cluster
-uses its own prepared environment and local weight tree; no job installs a
-package or retrieves a checkpoint. Cluster-specific submission and
-synchronization commands remain in the local internal workflow document.
+The cluster submission helper launches Seasonal Naive first, starts the three
+learned-model jobs in parallel after that baseline succeeds, and starts the
+summary with an `afterany` dependency on all four model jobs. Every cluster uses
+its own prepared environment and local weight tree; no job installs a package
+or retrieves a checkpoint. Cluster-specific submission and synchronization
+commands remain in the local internal workflow document.
 Each execution host writes to its standard `outputs/` and `logs/` roots;
 artifact synchronization may namespace a source host below subdirectories on
 the receiving host, but does not rename the source runtime directories.
