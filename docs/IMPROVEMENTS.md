@@ -191,6 +191,11 @@ deliberately.
 
 ## Feature and command repairs
 
+- Centralized TIME's missing-history forward fill and deterministic Seasonal
+  Naive point forecast so wrappers and the StatsForecast adapter share one
+  baseline policy.
+- Added a project-scoped artifact-clear helper for synchronized Selena payloads
+  on DGX and scratch outputs/logs on Selena.
 - Removed an unused default tsfeatures list that misleadingly named
   `heterogeneity` even though the runner never computed it.
 - Stopped feature-module import from globally suppressing every warning in the

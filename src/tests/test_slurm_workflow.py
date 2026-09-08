@@ -413,6 +413,23 @@ def main() -> None:
         in comparison_runner
     )
     assert "TIME_REUSE_IF_AVAILABLE_FROM" in comparison_runner
+
+    metrics = (PROJECT_ROOT / "src/timebench/evaluation/metrics.py").read_text(
+        encoding="utf-8"
+    )
+    statsforecast = (
+        PROJECT_ROOT / "src/timebench/models/statsforecast_predictor.py"
+    ).read_text(encoding="utf-8")
+    assert "def fill_missing_history(" in metrics
+    assert "def seasonal_naive_point_forecast(" in metrics
+    assert "history = fill_missing_history(history)" in statsforecast
+
+    artifact_clear = (PROJECT_ROOT / "clear_selena_artifacts.sh").read_text(
+        encoding="utf-8"
+    )
+    assert "usage: bash clear_selena_artifacts.sh dgx|selena" in artifact_clear
+    assert '"$PROJECT_ROOT/outputs/selena"' in artifact_clear
+    assert '"$scratch_project_root/outputs"' in artifact_clear
     print("TIME Slurm and DGX/Selena synchronization contract passed.")
 
 
