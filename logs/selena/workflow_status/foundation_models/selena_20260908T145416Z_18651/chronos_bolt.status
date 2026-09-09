@@ -1,0 +1,12 @@
+workflow=foundation_models
+launch_id=selena_20260908T145416Z_18651
+task=chronos_bolt
+state=completed
+stage=none
+active_task=none
+launched_at=2026-09-08T15:39:41Z
+updated_at=2026-09-08T16:03:45Z
+exit_code=0
+slurm_job_id=3227277
+slurm_array_job_id=none
+slurm_array_task_id=none

@@ -1,0 +1,719 @@
+2026-09-08 16:54:20 | workflow channels_comparison started launch_id=selena_channels_20260908T145417Z_18938 task=multivariate slurm_job_id=3227282 slurm_array_job_id=none slurm_array_task_id=none
+2026-09-08 16:54:20 | stage evaluate started
+2026-09-08 16:54:20 | task chronos2 comparison=multivariate covariate_mode=none target_mode=multivariate started
+[2026-09-08 16:54:20] TIME runner: run_chronos2_comparison.sh
+[2026-09-08 16:54:20] datasets: /scratch/users/h61084/datasets/hf_dataset
+[2026-09-08 16:54:20] weights: /scratch/users/h61084/weights
+[2026-09-08 16:54:20] outputs: /scratch/users/h61084/codes/improved/outputs
+[2026-09-08 16:54:20] covariate mode: none
+[2026-09-08 16:54:20] target mode: multivariate
+Running all 38 datasets from config:
+  - Water_Quality_Darwin/15T
+  - current_velocity/5T
+  - current_velocity/10T
+  - current_velocity/15T
+  - current_velocity/20T
+  - current_velocity/H
+  - Coastal_T_S/5T
+  - Coastal_T_S/15T
+  - Coastal_T_S/20T
+  - Coastal_T_S/H
+  - SG_Weather/D
+  - SG_PM25/H
+  - NE_China_Wind/H
+  - Australia_Solar/H
+  - OpenElectricity_NEM/5T
+  - EWELD_Load/15T
+  - Port_Activity/D
+  - Port_Activity/W
+  - Global_Influenza/W
+  - Crypto/D
+  - US_Term_Structure/B
+  - Oil_Price/B
+  - Job_Claims/W
+  - Uncertainty_1M/M
+  - Housing_Inventory/M
+  - JOLTS/M
+  - US_Labor/M
+  - Vehicle_Supply/M
+  - WUI_Global/Q
+  - Global_Price/Q
+  - Vehicle_Sales/M
+  - Supply_Chain_Customer/D
+  - Supply_Chain_Location/D
+  - azure2019_D/5T
+  - azure2019_I/5T
+  - azure2019_U/5T
+  - Smart_Manufacturing/H
+  - MetroPT-3/5T
+
+############################################################
+# Dataset 1/38: Water_Quality_Darwin/15T
+############################################################
+Loading configuration...
+
+============================================================
+Dataset: Water_Quality_Darwin/15T
+Model: amazon/chronos-2
+Checkpoint: /fslarge/scratch/users/h61084/weights/chronos2
+Terms: ['short', 'medium', 'long']
+Covariate mode: none
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=16, test_length=1440, val_length=1440
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/short/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:55:36.775900+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 15T
+    - Num series: 7
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=8662, max=18985, avg=15229.4
+    - Test split: 1440 steps
+    - Prediction length: 16
+    - Windows: 90
+    Processed 160/630...
+    Processed 320/630...
+    Processed 480/630...
+    Processed 630/630...
+    Total instances: 630, Series during experiment: 7, Windows: 90
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/short/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/short/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/short/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/short/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 2.0380
+      MAE: 0.4176
+      RMSE: 0.4995
+      MAPE: 0.0522
+      sMAPE: 0.0493
+      MASE: 0.6095
+      ND: 0.0503
+      CRPS: 0.0398
+  Completed: 7 series × 90 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=1440, val_length=1440
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/medium/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:56:07.278830+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 15T
+    - Num series: 7
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=8662, max=18985, avg=15229.4
+    - Test split: 1440 steps
+    - Prediction length: 96
+    - Windows: 15
+    Total instances: 105, Series during experiment: 7, Windows: 15
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/medium/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/medium/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/medium/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/medium/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 3.2557
+      MAE: 0.5578
+      RMSE: 0.7192
+      MAPE: 0.0681
+      sMAPE: 0.0638
+      MASE: 0.8598
+      ND: 0.0632
+      CRPS: 0.0506
+  Completed: 7 series × 15 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=288, test_length=1440, val_length=1440
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/long/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:56:10.686329+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 15T
+    - Num series: 7
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=8662, max=18985, avg=15229.4
+    - Test split: 1440 steps
+    - Prediction length: 288
+    - Windows: 5
+    Total instances: 35, Series during experiment: 7, Windows: 5
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/long/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/long/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/long/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/long/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 7.7741
+      MAE: 0.8808
+      RMSE: 1.1263
+      MAPE: 0.0994
+      sMAPE: 0.0930
+      MASE: 1.3439
+      ND: 0.0893
+      CRPS: 0.0721
+  Completed: 7 series × 5 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/Water_Quality_Darwin/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate
+============================================================
+
+############################################################
+# Dataset 2/38: current_velocity/5T
+############################################################
+Loading configuration...
+
+============================================================
+Dataset: current_velocity/5T
+Model: amazon/chronos-2
+Checkpoint: /fslarge/scratch/users/h61084/weights/chronos2
+Terms: ['short', 'medium', 'long']
+Covariate mode: none
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=36, test_length=4320, val_length=4320
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/short/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:56:12.086219+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 5T
+    - Num series: 1
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=26486, max=26486, avg=26486.0
+    - Test split: 4320 steps
+    - Prediction length: 36
+    - Windows: 120
+    Total instances: 120, Series during experiment: 1, Windows: 120
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/short/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/short/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/short/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/short/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 3.0685
+      MAE: 0.5618
+      RMSE: 0.6694
+      MAPE: 0.4378
+      sMAPE: 0.3418
+      MASE: 0.3707
+      ND: 0.2948
+      CRPS: 0.2316
+  Completed: 1 series × 120 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=288, test_length=4320, val_length=4320
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/medium/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:56:15.878196+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 5T
+    - Num series: 1
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=26486, max=26486, avg=26486.0
+    - Test split: 4320 steps
+    - Prediction length: 288
+    - Windows: 15
+    Total instances: 15, Series during experiment: 1, Windows: 15
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/medium/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/medium/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/medium/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/medium/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 5.7780
+      MAE: 0.8236
+      RMSE: 1.0186
+      MAPE: 0.6862
+      sMAPE: 0.4074
+      MASE: 0.5888
+      ND: 0.3592
+      CRPS: 0.2829
+  Completed: 1 series × 15 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=864, test_length=4320, val_length=4320
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/long/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:56:16.586633+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 5T
+    - Num series: 1
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=26486, max=26486, avg=26486.0
+    - Test split: 4320 steps
+    - Prediction length: 864
+    - Windows: 5
+    Total instances: 5, Series during experiment: 1, Windows: 5
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/long/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/long/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/long/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/long/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 6.6002
+      MAE: 0.9700
+      RMSE: 1.1716
+      MAPE: 0.8365
+      sMAPE: 0.4826
+      MASE: 0.8498
+      ND: 0.4323
+      CRPS: 0.3429
+  Completed: 1 series × 5 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/5T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate
+============================================================
+
+############################################################
+# Dataset 3/38: current_velocity/10T
+############################################################
+Loading configuration...
+
+============================================================
+Dataset: current_velocity/10T
+Model: amazon/chronos-2
+Checkpoint: /fslarge/scratch/users/h61084/weights/chronos2
+Terms: ['short', 'medium', 'long']
+Covariate mode: none
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=18, test_length=2160, val_length=2160
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/short/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:56:17.056807+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 10T
+    - Num series: 10
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=7481, max=31957, avg=20668.5
+    - Test split: 2160 steps
+    - Prediction length: 18
+    - Windows: 120
+    Processed 160/1200...
+    Processed 320/1200...
+    Processed 480/1200...
+    Processed 640/1200...
+    Processed 800/1200...
+    Processed 960/1200...
+    Processed 1120/1200...
+    Total instances: 1200, Series during experiment: 10, Windows: 120
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/short/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/short/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/short/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/short/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 6.8678
+      MAE: 0.7123
+      RMSE: 0.8966
+      MAPE: 2931.1289
+      sMAPE: 0.4301
+      MASE: 0.5195
+      ND: 0.3190
+      CRPS: 0.2514
+  Completed: 10 series × 120 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=144, test_length=2160, val_length=2160
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/medium/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:56:52.987942+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 10T
+    - Num series: 10
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=7481, max=31957, avg=20668.5
+    - Test split: 2160 steps
+    - Prediction length: 144
+    - Windows: 15
+    Processed 150/150...
+    Total instances: 150, Series during experiment: 10, Windows: 15
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/medium/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/medium/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/medium/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/medium/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 9.6732
+      MAE: 0.8863
+      RMSE: 1.1857
+      MAPE: 3752.3645
+      sMAPE: 0.4776
+      MASE: 0.6789
+      ND: 0.3300
+      CRPS: 0.2610
+  Completed: 10 series × 15 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=432, test_length=2160, val_length=2160
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/long/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:56:57.939566+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 10T
+    - Num series: 10
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=7481, max=31957, avg=20668.5
+    - Test split: 2160 steps
+    - Prediction length: 432
+    - Windows: 5
+    Total instances: 50, Series during experiment: 10, Windows: 5
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/long/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/long/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/long/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/long/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 11.9539
+      MAE: 1.0456
+      RMSE: 1.3711
+      MAPE: 3797.3375
+      sMAPE: 0.5294
+      MASE: 0.9316
+      ND: 0.3745
+      CRPS: 0.2964
+  Completed: 10 series × 5 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/10T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate
+============================================================
+
+############################################################
+# Dataset 4/38: current_velocity/15T
+############################################################
+Loading configuration...
+
+============================================================
+Dataset: current_velocity/15T
+Model: amazon/chronos-2
+Checkpoint: /fslarge/scratch/users/h61084/weights/chronos2
+Terms: ['short', 'medium', 'long']
+Covariate mode: none
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=1440, val_length=1440
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/short/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:57:00.012528+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 15T
+    - Num series: 5
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=3710, max=17953, avg=8503.2
+    - Test split: 1440 steps
+    - Prediction length: 12
+    - Windows: 120
+    Processed 160/600...
+    Processed 320/600...
+    Processed 480/600...
+    Total instances: 600, Series during experiment: 5, Windows: 120
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/short/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/short/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/short/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/short/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 6.1124
+      MAE: 0.7461
+      RMSE: 0.9065
+      MAPE: 109460.3940
+      sMAPE: 0.4606
+      MASE: 0.5007
+      ND: 0.3805
+      CRPS: 0.2990
+  Completed: 5 series × 120 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=1440, val_length=1440
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/medium/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:57:12.954054+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 15T
+    - Num series: 5
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=3710, max=17953, avg=8503.2
+    - Test split: 1440 steps
+    - Prediction length: 96
+    - Windows: 15
+    Total instances: 75, Series during experiment: 5, Windows: 15
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/medium/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/medium/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/medium/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/medium/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 9.1292
+      MAE: 0.9660
+      RMSE: 1.2148
+      MAPE: 117305.1553
+      sMAPE: 0.5654
+      MASE: 0.7241
+      ND: 0.4307
+      CRPS: 0.3379
+  Completed: 5 series × 15 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=288, test_length=1440, val_length=1440
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/long/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:57:15.031129+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 15T
+    - Num series: 5
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=3710, max=17953, avg=8503.2
+    - Test split: 1440 steps
+    - Prediction length: 288
+    - Windows: 5
+    Total instances: 25, Series during experiment: 5, Windows: 5
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/long/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/long/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/long/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/long/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 10.9029
+      MAE: 1.0687
+      RMSE: 1.3535
+      MAPE: 104506.0226
+      sMAPE: 0.5881
+      MASE: 0.8331
+      ND: 0.4528
+      CRPS: 0.3588
+  Completed: 5 series × 5 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate
+============================================================
+
+############################################################
+# Dataset 5/38: current_velocity/20T
+############################################################
+Loading configuration...
+
+============================================================
+Dataset: current_velocity/20T
+Model: amazon/chronos-2
+Checkpoint: /fslarge/scratch/users/h61084/weights/chronos2
+Terms: ['short', 'medium', 'long']
+Covariate mode: none
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=9, test_length=1080, val_length=1080
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/short/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:57:16.254753+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 20T
+    - Num series: 27
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=2529, max=16759, avg=6460.2
+    - Test split: 1080 steps
+    - Prediction length: 9
+    - Windows: 120
+    Processed 160/3240...
+    Processed 320/3240...
+    Processed 480/3240...
+    Processed 640/3240...
+    Processed 800/3240...
+    Processed 960/3240...
+    Processed 1120/3240...
+    Processed 1280/3240...
+    Processed 1440/3240...
+    Processed 1600/3240...
+    Processed 1760/3240...
+    Processed 1920/3240...
+    Processed 2080/3240...
+    Processed 2240/3240...
+    Processed 2400/3240...
+    Processed 2560/3240...
+    Processed 2720/3240...
+    Processed 2880/3240...
+    Processed 3040/3240...
+    Processed 3200/3240...
+    Total instances: 3240, Series during experiment: 27, Windows: 120
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/short/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/short/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/short/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/short/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 4.1839
+      MAE: 0.6081
+      RMSE: 0.7147
+      MAPE: 0.8974
+      sMAPE: 0.4112
+      MASE: 0.4727
+      ND: 0.3304
+      CRPS: 0.2595
+  Completed: 27 series × 120 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=72, test_length=1080, val_length=1080
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/medium/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:58:20.699856+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 20T
+    - Num series: 27
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=2529, max=16759, avg=6460.2
+    - Test split: 1080 steps
+    - Prediction length: 72
+    - Windows: 15
+    Processed 160/405...
+    Processed 320/405...
+    Total instances: 405, Series during experiment: 27, Windows: 15
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/medium/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/medium/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/medium/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/medium/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 7.7470
+      MAE: 0.8801
+      RMSE: 1.0841
+      MAPE: 1.1282
+      sMAPE: 0.5007
+      MASE: 0.7300
+      ND: 0.3761
+      CRPS: 0.2974
+  Completed: 27 series × 15 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=216, test_length=1080, val_length=1080
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/long/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:58:30.865420+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...
+  Dataset info:
+    - Frequency: 20T
+    - Num series: 27
+    - Target dim: 6
+    - Target mode: multivariate
+    - Covariate channels: 0
+    - Series length: min=2529, max=16759, avg=6460.2
+    - Test split: 1080 steps
+    - Prediction length: 216
+    - Windows: 5
+    Total instances: 135, Series during experiment: 27, Windows: 5
+    Collecting ground truth and context...
+    Organizing data into arrays...
+    Saved predictions (quantiles) to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/long/run_0/predictions.npz
+    Computing per-window metrics...
+    Saved metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/long/run_0/metrics.npz
+    Saved config to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/long/run_0/config.json
+    Saved aggregate metrics to /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/long/run_0/metrics_summary.json
+    Metrics summary (averaged over all series/windows/variates):
+      MSE: 9.6822
+      MAE: 1.0253
+      RMSE: 1.2859
+      MAPE: 1.5439
+      sMAPE: 0.5923
+      MASE: 1.0349
+      ND: 0.4587
+      CRPS: 0.3610
+  Completed: 27 series × 5 windows
+  Output: /fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/20T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate
+============================================================
+
+############################################################
+# Dataset 6/38: current_velocity/H
+############################################################
+Loading configuration...
+
+============================================================
+Dataset: current_velocity/H
+Model: amazon/chronos-2
+Checkpoint: /fslarge/scratch/users/h61084/weights/chronos2
+Terms: ['short', 'medium', 'long']
+Covariate mode: none
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=672, val_length=672
+TIME run allocation action=recompute reuse_source=/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate reason=Reuse source does not exist: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/chronos2/multivariate
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/multivariate/chronos2/multivariate/current_velocity/H/short/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227282 launched_at=2026-09-08T14:58:34.987412+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...

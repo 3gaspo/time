@@ -1,5 +1,5 @@
 {
-  "completed_at": "2026-09-07T23:14:15.388340+00:00",
+  "completed_at": "2026-09-08T15:08:13.196496+00:00",
   "experiment": "foundation_models",
   "experiment_config": {
     "covariate_channels": 0,
@@ -17,15 +17,29 @@
     "attempts": [
       {
         "action": "new",
-        "launch_id": "selena_20260907T230635Z_3389",
-        "launched_at": "2026-09-07T23:14:14.991807+00:00",
+        "launch_id": "selena_20260908T145416Z_18651",
+        "launched_at": "2026-09-08T15:08:12.800322+00:00",
         "slurm_array_task_id": null,
-        "slurm_job_id": "3221289"
+        "slurm_job_id": "3227276"
+      },
+      {
+        "action": "reuse",
+        "launch_id": "selena_20260908T145416Z_18651",
+        "launched_at": "2026-09-08T15:14:29.488950+00:00",
+        "slurm_array_task_id": null,
+        "slurm_job_id": "3227276"
+      },
+      {
+        "action": "reuse",
+        "launch_id": "selena_20260908T145416Z_18651",
+        "launched_at": "2026-09-08T15:33:00.910089+00:00",
+        "slurm_array_task_id": null,
+        "slurm_job_id": "3227276"
       }
     ],
-    "launch_id": "selena_20260907T230635Z_3389",
-    "launched_at": "2026-09-07T23:14:14.991807+00:00",
-    "slurm_job_id": "3221289"
+    "launch_id": "selena_20260908T145416Z_18651",
+    "launched_at": "2026-09-08T15:08:12.800322+00:00",
+    "slurm_job_id": "3227276"
   },
   "model_config": {
     "quantile_levels": [
@@ -61,7 +75,7 @@
     "device": "cpu"
   },
   "schema_version": 1,
-  "started_at": "2026-09-07T23:14:14.991807+00:00",
+  "started_at": "2026-09-08T15:08:12.800322+00:00",
   "status": "completed",
-  "updated_at": "2026-09-07T23:14:15.388340+00:00"
+  "updated_at": "2026-09-08T15:33:00.910089+00:00"
 }

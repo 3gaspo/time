@@ -1,0 +1,65 @@
+{
+  "error": {
+    "message": "launch selena_20260908T145416Z_18651 ended before task completion",
+    "type": "InterruptedLaunch"
+  },
+  "experiment": "foundation_models",
+  "experiment_config": {
+    "covariate_channels": 0,
+    "covariate_mode": "none"
+  },
+  "identity": {
+    "dataset": "US_Term_Structure",
+    "frequency": "B",
+    "model": "seasonal_naive",
+    "target_mode": "univariate",
+    "term": "short"
+  },
+  "launch": {
+    "action": "new",
+    "attempts": [
+      {
+        "action": "new",
+        "launch_id": "selena_20260908T145416Z_18651",
+        "launched_at": "2026-09-08T15:11:21.965757+00:00",
+        "slurm_array_task_id": null,
+        "slurm_job_id": "3227276"
+      }
+    ],
+    "launch_id": "selena_20260908T145416Z_18651",
+    "launched_at": "2026-09-08T15:11:21.965757+00:00",
+    "slurm_job_id": "3227276"
+  },
+  "model_config": {
+    "quantile_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ]
+  },
+  "pipeline_config": {
+    "prediction_length": 20,
+    "seasonality": 5,
+    "test_length": 717,
+    "val_length": 100,
+    "windows": 35
+  },
+  "project": "improved",
+  "provenance": {
+    "dataset_config_path": null
+  },
+  "required_artifacts": [],
+  "runtime_config": {
+    "device": "cpu"
+  },
+  "schema_version": 1,
+  "started_at": "2026-09-08T15:11:21.965757+00:00",
+  "status": "interrupted",
+  "updated_at": "2026-09-08T15:11:28.218540+00:00"
+}

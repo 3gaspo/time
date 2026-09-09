@@ -1,5 +1,5 @@
 {
-  "completed_at": "2026-09-07T23:13:36.570505+00:00",
+  "completed_at": "2026-09-08T15:45:42.289831+00:00",
   "experiment": "foundation_models",
   "experiment_config": {
     "covariate_channels": 0,
@@ -19,15 +19,15 @@
     "attempts": [
       {
         "action": "new",
-        "launch_id": "selena_20260907T230635Z_3389",
-        "launched_at": "2026-09-07T23:13:29.413428+00:00",
+        "launch_id": "selena_20260908T145416Z_18651",
+        "launched_at": "2026-09-08T15:45:35.078665+00:00",
         "slurm_array_task_id": null,
-        "slurm_job_id": "3221287"
+        "slurm_job_id": "3227278"
       }
     ],
-    "launch_id": "selena_20260907T230635Z_3389",
-    "launched_at": "2026-09-07T23:13:29.413428+00:00",
-    "slurm_job_id": "3221287"
+    "launch_id": "selena_20260908T145416Z_18651",
+    "launched_at": "2026-09-08T15:45:35.078665+00:00",
+    "slurm_job_id": "3227278"
   },
   "model_config": {
     "context_length": 8192,
@@ -67,7 +67,7 @@
     "device": "cuda"
   },
   "schema_version": 1,
-  "started_at": "2026-09-07T23:13:29.413428+00:00",
+  "started_at": "2026-09-08T15:45:35.078665+00:00",
   "status": "completed",
-  "updated_at": "2026-09-07T23:13:36.570505+00:00"
+  "updated_at": "2026-09-08T15:45:42.289831+00:00"
 }

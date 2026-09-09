@@ -1,5 +1,8 @@
 {
-  "completed_at": "2026-09-07T23:14:03.812411+00:00",
+  "error": {
+    "message": "launch selena_channels_20260908T145837Z_20802 ended before task completion",
+    "type": "InterruptedLaunch"
+  },
   "experiment": "channels_comparison",
   "experiment_config": {
     "covariate_channels": 0,
@@ -19,15 +22,15 @@
     "attempts": [
       {
         "action": "new",
-        "launch_id": "selena_channels_20260907T230635Z_3518",
-        "launched_at": "2026-09-07T23:13:38.837817+00:00",
+        "launch_id": "selena_channels_20260908T145837Z_20802",
+        "launched_at": "2026-09-08T15:01:52.284944+00:00",
         "slurm_array_task_id": null,
-        "slurm_job_id": "3221291"
+        "slurm_job_id": "3227347"
       }
     ],
-    "launch_id": "selena_channels_20260907T230635Z_3518",
-    "launched_at": "2026-09-07T23:13:38.837817+00:00",
-    "slurm_job_id": "3221291"
+    "launch_id": "selena_channels_20260908T145837Z_20802",
+    "launched_at": "2026-09-08T15:01:52.284944+00:00",
+    "slurm_job_id": "3227347"
   },
   "model_config": {
     "context_length": 8192,
@@ -55,19 +58,14 @@
   "provenance": {
     "dataset_config_path": null
   },
-  "required_artifacts": [
-    "predictions.npz",
-    "metrics.npz",
-    "config.json",
-    "metrics_summary.json"
-  ],
+  "required_artifacts": [],
   "runtime_config": {
     "batch_size": 16,
     "checkpoint_path": "/fslarge/scratch/users/h61084/weights/chronos2",
     "device": "cuda"
   },
   "schema_version": 1,
-  "started_at": "2026-09-07T23:13:38.837817+00:00",
-  "status": "completed",
-  "updated_at": "2026-09-07T23:14:03.812411+00:00"
+  "started_at": "2026-09-08T15:01:52.284944+00:00",
+  "status": "interrupted",
+  "updated_at": "2026-09-08T15:02:03.202381+00:00"
 }
