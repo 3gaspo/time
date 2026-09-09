@@ -1,0 +1,18 @@
+2026-09-09 11:04:31 | workflow foundation_models started launch_id=selena_20260909T084557Z_38191 task=timesfm3 slurm_job_id=3241613 slurm_array_job_id=none slurm_array_task_id=none
+2026-09-09 11:04:31 | stage evaluate started
+2026-09-09 11:04:31 | task model=timesfm3 runner=run_timesfm3.sh environment=uv covariate_mode=none target_mode=auto started
+[2026-09-09 11:04:31] TIME runner: run_timesfm3.sh
+[2026-09-09 11:04:31] datasets: /scratch/users/h61084/datasets/hf_dataset
+[2026-09-09 11:04:31] weights: /scratch/users/h61084/weights
+[2026-09-09 11:04:31] outputs: /scratch/users/h61084/codes/improved/outputs
+[2026-09-09 11:04:31] covariate mode: none
+[2026-09-09 11:04:31] target mode: auto
+Dataset 1/1: Water_Quality_Darwin/15T
+Dataset: Water_Quality_Darwin/15T
+Model: google/timesfm-3.0-pytorch
+Checkpoint: /fslarge/scratch/users/h61084/weights/timesfm3
+Terms: ['short', 'medium', 'long']
+Covariate mode: none
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/timesfm3/multivariate/Water_Quality_Darwin/15T/short/run_0 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241613 launched_at=2026-09-09T09:04:35.295245+00:00
+Initializing official TimesFM-3 evaluator (/fslarge/scratch/users/h61084/weights/timesfm3)...
+Loading weights from local directory

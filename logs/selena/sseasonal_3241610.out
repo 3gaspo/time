@@ -1,0 +1,1502 @@
+2026-09-09 10:46:00 | workflow foundation_models started launch_id=selena_20260909T084557Z_38191 task=seasonal_naive slurm_job_id=3241610 slurm_array_job_id=none slurm_array_task_id=none
+2026-09-09 10:46:00 | stage evaluate started
+2026-09-09 10:46:00 | task model=seasonal_naive runner=run_seasonal_naive.sh environment=uv covariate_mode=none target_mode=auto started
+[2026-09-09 10:46:00] TIME runner: run_seasonal_naive.sh
+[2026-09-09 10:46:00] datasets: /scratch/users/h61084/datasets/hf_dataset
+[2026-09-09 10:46:00] weights: /scratch/users/h61084/weights
+[2026-09-09 10:46:00] outputs: /scratch/users/h61084/codes/improved/outputs
+[2026-09-09 10:46:00] covariate mode: none
+[2026-09-09 10:46:00] target mode: auto
+
+############################################################
+# Dataset 1/1: Water_Quality_Darwin/15T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Water_Quality_Darwin/15T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=16, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Water_Quality_Darwin/15T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:28.834020+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Water_Quality_Darwin/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Water_Quality_Darwin/15T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:28.865218+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Water_Quality_Darwin/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=288, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Water_Quality_Darwin/15T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:28.894431+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Water_Quality_Darwin/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: current_velocity/5T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: current_velocity/5T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=36, test_length=4320, val_length=4320
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/5T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:32.856090+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/5T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=288, test_length=4320, val_length=4320
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/5T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:32.896349+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/5T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=864, test_length=4320, val_length=4320
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/5T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:32.934548+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/5T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: current_velocity/10T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: current_velocity/10T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=18, test_length=2160, val_length=2160
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/10T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:36.077100+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/10T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=144, test_length=2160, val_length=2160
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/10T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:36.119002+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/10T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=432, test_length=2160, val_length=2160
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/10T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:36.158654+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/10T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: current_velocity/15T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: current_velocity/15T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/15T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:39.144246+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/15T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:39.174073+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=288, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/15T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:39.201801+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: current_velocity/20T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: current_velocity/20T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=9, test_length=1080, val_length=1080
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/20T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:42.385879+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/20T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=72, test_length=1080, val_length=1080
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/20T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:42.401493+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/20T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=216, test_length=1080, val_length=1080
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/20T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:42.414753+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/20T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: current_velocity/H
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: current_velocity/H
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/H/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:45.431615+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/H/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=168, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/H/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:45.446854+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/H/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=336, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/H/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:45.460927+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/current_velocity/H/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: CPHL/15T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: CPHL/15T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/15T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:48.358709+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/15T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:48.366687+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=288, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/15T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:48.374347+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: CPHL/30T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: CPHL/30T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/30T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:51.270910+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/30T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=48, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/30T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:51.279055+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/30T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=144, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/30T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:51.286863+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/30T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: CPHL/H
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: CPHL/H
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/H/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:54.174145+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/H/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=168, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/H/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:54.181446+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/H/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=336, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/H/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:54.188518+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/CPHL/H/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Coastal_T_S/5T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Coastal_T_S/5T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=36, test_length=4320, val_length=4320
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/5T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:57.297317+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/5T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=288, test_length=4320, val_length=4320
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/5T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:57.370757+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/5T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=864, test_length=4320, val_length=4320
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/5T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:46:57.441625+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/5T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Coastal_T_S/15T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Coastal_T_S/15T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/15T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:00.466614+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/15T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:00.487867+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=288, test_length=1440, val_length=1440
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/15T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:00.507863+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Coastal_T_S/20T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Coastal_T_S/20T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=9, test_length=1080, val_length=1080
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/20T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:03.416235+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/20T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=72, test_length=1080, val_length=1080
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/20T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:03.429587+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/20T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=216, test_length=1080, val_length=1080
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/20T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:03.442405+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/20T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Coastal_T_S/H
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Coastal_T_S/H
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/H/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:06.514163+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/H/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=168, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/H/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:06.529251+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/H/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=336, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/H/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:06.542873+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Coastal_T_S/H/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: SG_Weather/D
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: SG_Weather/D
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=3, test_length=366, val_length=366
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Weather/D/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:09.454681+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Weather/D/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=7, test_length=366, val_length=366
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Weather/D/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:09.466055+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Weather/D/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=14, test_length=366, val_length=366
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Weather/D/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:09.476981+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Weather/D/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: SG_PM25/H
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: SG_PM25/H
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=2208, val_length=2160
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_PM25/H/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:12.492034+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_PM25/H/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=72, test_length=2208, val_length=2160
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_PM25/H/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:12.538464+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_PM25/H/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=168, test_length=2208, val_length=2160
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_PM25/H/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:12.582637+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_PM25/H/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: NE_China_Wind/H
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: NE_China_Wind/H
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=720, val_length=720
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/NE_China_Wind/H/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:15.491103+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/NE_China_Wind/H/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=72, test_length=720, val_length=720
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/NE_China_Wind/H/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:15.506494+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/NE_China_Wind/H/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=168, test_length=720, val_length=720
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/NE_China_Wind/H/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:15.521320+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/NE_China_Wind/H/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Australia_Solar/H
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Australia_Solar/H
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=2520, val_length=2520
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Australia_Solar/H/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:18.448717+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Australia_Solar/H/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=72, test_length=2520, val_length=2520
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Australia_Solar/H/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:18.479494+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Australia_Solar/H/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=168, test_length=2520, val_length=2520
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Australia_Solar/H/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:18.508345+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Australia_Solar/H/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: epf_electricity_price/H
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: epf_electricity_price/H
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=2520, val_length=2520
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/epf_electricity_price/H/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:21.421789+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/epf_electricity_price/H/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=72, test_length=2520, val_length=2520
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/epf_electricity_price/H/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:21.434251+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/epf_electricity_price/H/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=168, test_length=2520, val_length=2520
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/epf_electricity_price/H/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:21.446426+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/epf_electricity_price/H/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: OpenElectricity_NEM/5T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: OpenElectricity_NEM/5T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=4032, val_length=4032
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/OpenElectricity_NEM/5T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:24.597198+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/OpenElectricity_NEM/5T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=4032, val_length=4032
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/OpenElectricity_NEM/5T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:24.698263+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/OpenElectricity_NEM/5T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=288, test_length=4032, val_length=4032
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/OpenElectricity_NEM/5T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:24.796447+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/OpenElectricity_NEM/5T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: EWELD_Load/15T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: EWELD_Load/15T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=1344, val_length=1344
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/EWELD_Load/15T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:27.859610+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/EWELD_Load/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=1344, val_length=1344
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/EWELD_Load/15T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:27.908088+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/EWELD_Load/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=672, test_length=1344, val_length=1344
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/EWELD_Load/15T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:27.954102+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/EWELD_Load/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: SG_Carpark/15T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: SG_Carpark/15T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=16, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Carpark/15T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:30.858009+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Carpark/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Carpark/15T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:30.866563+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Carpark/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=672, test_length=672, val_length=672
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Carpark/15T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:30.874727+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/SG_Carpark/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Finland_Traffic/15T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Finland_Traffic/15T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=16, test_length=2976, val_length=2880
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Finland_Traffic/15T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:33.774215+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Finland_Traffic/15T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=96, test_length=2976, val_length=2880
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Finland_Traffic/15T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:33.784828+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Finland_Traffic/15T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=672, test_length=2976, val_length=2880
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Finland_Traffic/15T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:33.795285+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Finland_Traffic/15T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Port_Activity/D
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Port_Activity/D
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=30, test_length=365, val_length=90
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Port_Activity/D/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:36.892346+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Port_Activity/D/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Port_Activity/W
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Port_Activity/W
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=13, test_length=52, val_length=13
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Port_Activity/W/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:39.789685+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Port_Activity/W/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: ECDC_COVID/D
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: ECDC_COVID/D
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=30, test_length=150, val_length=30
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/ECDC_COVID/D/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:42.687907+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/ECDC_COVID/D/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: ECDC_COVID/W
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: ECDC_COVID/W
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=13, test_length=52, val_length=13
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/ECDC_COVID/W/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:45.572727+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/ECDC_COVID/W/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Global_Influenza/W
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Global_Influenza/W
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=13, test_length=52, val_length=13
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Global_Influenza/W/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:48.476467+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Global_Influenza/W/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Crypto/D
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Crypto/D
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=30, test_length=273, val_length=92
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Crypto/D/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:51.385096+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Crypto/D/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: US_Term_Structure/B
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: US_Term_Structure/B
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=20, test_length=717, val_length=100
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/US_Term_Structure/B/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:54.386070+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/US_Term_Structure/B/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Oil_Price/B
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Oil_Price/B
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=20, test_length=717, val_length=100
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Oil_Price/B/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:47:57.306334+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Oil_Price/B/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Job_Claims/W
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Job_Claims/W
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=13, test_length=52, val_length=13
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Job_Claims/W/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:00.202691+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Job_Claims/W/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Uncertainty_1M/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Uncertainty_1M/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=6, test_length=42, val_length=18
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Uncertainty_1M/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:03.095561+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Uncertainty_1M/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Housing_Inventory/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Housing_Inventory/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=36, val_length=12
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Housing_Inventory/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:05.989590+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Housing_Inventory/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: JOLTS/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: JOLTS/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=60, val_length=12
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/JOLTS/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:08.900870+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/JOLTS/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: US_Labor/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: US_Labor/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=60, val_length=12
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/US_Labor/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:11.811109+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/US_Labor/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Vehicle_Supply/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Vehicle_Supply/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=60, val_length=12
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Vehicle_Supply/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:14.695988+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Vehicle_Supply/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Auto_Production_SF/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Auto_Production_SF/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=60, val_length=12
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Auto_Production_SF/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:17.603115+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Auto_Production_SF/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Commodity_Production/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Commodity_Production/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=60, val_length=12
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Commodity_Production/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:20.492797+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Commodity_Production/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Commodity_Import/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Commodity_Import/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=60, val_length=12
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Commodity_Import/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:23.383121+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Commodity_Import/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: WUI_Global/Q
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: WUI_Global/Q
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=4, test_length=20, val_length=20
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/WUI_Global/Q/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:26.267730+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/WUI_Global/Q/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Global_Price/Q
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Global_Price/Q
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=4, test_length=20, val_length=8
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Global_Price/Q/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:29.164357+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Global_Price/Q/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Vehicle_Sales/M
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Vehicle_Sales/M
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=12, test_length=60, val_length=12
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Vehicle_Sales/M/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:32.077986+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Vehicle_Sales/M/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Online_Retail_2_UCI/D
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Online_Retail_2_UCI/D
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=30, test_length=180, val_length=90
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Online_Retail_2_UCI/D/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:34.962879+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Online_Retail_2_UCI/D/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Supply_Chain_Customer/D
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Supply_Chain_Customer/D
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=30, test_length=365, val_length=90
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Supply_Chain_Customer/D/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:37.896552+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Supply_Chain_Customer/D/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Supply_Chain_Location/D
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Supply_Chain_Location/D
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=30, test_length=365, val_length=90
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Supply_Chain_Location/D/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:40.820465+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Supply_Chain_Location/D/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: azure2019_D/5T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: azure2019_D/5T
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=288, test_length=864, val_length=864
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/azure2019_D/5T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:44.341414+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/azure2019_D/5T/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: azure2019_I/5T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: azure2019_I/5T
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=288, test_length=864, val_length=864
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/azure2019_I/5T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:47.872870+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/azure2019_I/5T/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: azure2019_U/5T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: azure2019_U/5T
+Terms: ['short']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=48, test_length=288, val_length=96
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/azure2019_U/5T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:50.925616+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/azure2019_U/5T/short/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: Smart_Manufacturing/H
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: Smart_Manufacturing/H
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=24, test_length=336, val_length=336
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Smart_Manufacturing/H/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:53.998614+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Smart_Manufacturing/H/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=168, test_length=336, val_length=336
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Smart_Manufacturing/H/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:54.010262+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Smart_Manufacturing/H/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=336, test_length=336, val_length=336
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Smart_Manufacturing/H/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:54.021095+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/Smart_Manufacturing/H/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+
+############################################################
+# Dataset 1/1: MetroPT-3/5T
+############################################################
+Loading configuration...
+
+============================================================
+Model: Seasonal Naive
+Dataset: MetroPT-3/5T
+Terms: ['short', 'medium', 'long']
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=48, test_length=1728, val_length=1728
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/MetroPT-3/5T/short/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:56.934250+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/MetroPT-3/5T/short/run_0
+
+--- Term: medium ---
+  Config: prediction_length=288, test_length=1728, val_length=1728
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/MetroPT-3/5T/medium/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:56.962967+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/MetroPT-3/5T/medium/run_0
+
+--- Term: long ---
+  Config: prediction_length=576, test_length=1728, val_length=1728
+TIME run allocation action=skip run=/fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/MetroPT-3/5T/long/run_0 source_launch=selena_20260908T145416Z_18651 launch_id=selena_20260909T084557Z_38191 slurm_job_id=3241610 launched_at=2026-09-09T08:48:56.989839+00:00
+  Reused completed task: /fslarge/scratch/users/h61084/codes/improved/outputs/foundation_models/tasks/seasonal_naive/univariate/MetroPT-3/5T/long/run_0
+
+============================================================
+All experiments completed!
+Results saved to: /scratch/users/h61084/codes/improved/outputs/foundation_models/tasks
+============================================================
+
+############################################################
+# All 1 dataset(s) completed!
+############################################################
+2026-09-09 10:48:57 | task model=seasonal_naive runner=run_seasonal_naive.sh environment=uv covariate_mode=none target_mode=auto completed status=success
+2026-09-09 10:48:57 | stage evaluate completed status=success
+2026-09-09 10:48:57 | workflow foundation_models completed status=success exit_code=0

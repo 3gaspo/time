@@ -1,0 +1,12 @@
+workflow=foundation_models
+launch_id=selena_20260909T084557Z_38191
+task=seasonal_naive
+state=completed
+stage=none
+active_task=none
+launched_at=2026-09-09T08:46:00Z
+updated_at=2026-09-09T08:48:57Z
+exit_code=0
+slurm_job_id=3241610
+slurm_array_job_id=none
+slurm_array_task_id=none

@@ -1,0 +1,78 @@
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/json.py:102: UserWarning: Using `json`-module for json-handling. Consider installing one of `orjson`, `ujson` to speed up serialization and deserialization.
+  warnings.warn(
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:   8%|▊         | 13/170 [00:00<00:01, 118.83it/s]Loading weights:  22%|██▏       | 38/170 [00:00<00:00, 191.41it/s]Loading weights:  38%|███▊      | 64/170 [00:00<00:00, 220.13it/s]Loading weights:  54%|█████▎    | 91/170 [00:00<00:00, 229.79it/s]Loading weights:  76%|███████▌  | 129/170 [00:00<00:00, 271.62it/s]Loading weights:  95%|█████████▍| 161/170 [00:00<00:00, 281.89it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 257.29it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/dataset/common.py:263: FutureWarning: Period with BDay freq is deprecated and will be removed in a future version. Use a DatetimeIndex with BDay freq instead.
+  return pd.Period(val, freq)
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/dataset/split.py:181: FutureWarning: Period with BDay freq is deprecated and will be removed in a future version. Use a DatetimeIndex with BDay freq instead.
+  sliced_entry[FieldName.START] += offset
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/dataset/split.py:181: FutureWarning: Period with BDay freq is deprecated and will be removed in a future version. Use a DatetimeIndex with BDay freq instead.
+  sliced_entry[FieldName.START] += offset
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 100/170 [00:00<00:00, 982.25it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 982.89it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/dataset/common.py:263: FutureWarning: Period with BDay freq is deprecated and will be removed in a future version. Use a DatetimeIndex with BDay freq instead.
+  return pd.Period(val, freq)
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/dataset/split.py:181: FutureWarning: Period with BDay freq is deprecated and will be removed in a future version. Use a DatetimeIndex with BDay freq instead.
+  sliced_entry[FieldName.START] += offset
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 100/170 [00:00<00:00, 994.54it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 991.85it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 101/170 [00:00<00:00, 1005.75it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 991.43it/s] 
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 101/170 [00:00<00:00, 1009.74it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 997.32it/s] 
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 100/170 [00:00<00:00, 995.62it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 987.57it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 101/170 [00:00<00:00, 1003.99it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 989.84it/s] 
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 101/170 [00:00<00:00, 1006.61it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 993.83it/s] 
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'Q' is deprecated and will be removed in a future version, please use 'QE' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 101/170 [00:00<00:00, 1005.04it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 993.50it/s] 
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'Q' is deprecated and will be removed in a future version, please use 'QE' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 100/170 [00:00<00:00, 999.34it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 998.49it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 101/170 [00:00<00:00, 1001.27it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 994.10it/s] 
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 101/170 [00:00<00:00, 1004.39it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 992.37it/s] 
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 100/170 [00:00<00:00, 991.95it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 988.15it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  14%|█▎        | 23/170 [00:00<00:00, 228.20it/s]Loading weights:  32%|███▏      | 54/170 [00:00<00:00, 273.65it/s]Loading weights:  59%|█████▉    | 101/170 [00:00<00:00, 362.18it/s]Loading weights:  85%|████████▌ | 145/170 [00:00<00:00, 390.13it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 376.82it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/dataset/common.py:263: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  return pd.Period(val, freq)
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  21%|██        | 36/170 [00:00<00:00, 350.22it/s]Loading weights:  42%|████▏     | 72/170 [00:00<00:00, 321.45it/s]Loading weights:  68%|██████▊   | 116/170 [00:00<00:00, 371.45it/s]Loading weights:  95%|█████████▍| 161/170 [00:00<00:00, 389.53it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 384.64it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 99/170 [00:00<00:00, 986.68it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 981.45it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 99/170 [00:00<00:00, 987.99it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 983.67it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/dataset/common.py:263: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  return pd.Period(val, freq)
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 98/170 [00:00<00:00, 979.61it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 975.40it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 100/170 [00:00<00:00, 996.16it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 991.30it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 99/170 [00:00<00:00, 986.02it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 986.77it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/dataset/common.py:263: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  return pd.Period(val, freq)
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 100/170 [00:00<00:00, 992.26it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 984.03it/s]
+/fssmall/home/h61084/codes/improved/.venv/lib/python3.12/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
+  offset = pd.tseries.frequencies.to_offset(freq)
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 100/170 [00:00<00:00, 998.03it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 989.27it/s]

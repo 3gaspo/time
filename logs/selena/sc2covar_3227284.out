@@ -1,0 +1,66 @@
+2026-09-08 16:58:06 | workflow channels_comparison started launch_id=selena_channels_20260908T145417Z_18938 task=covariate slurm_job_id=3227284 slurm_array_job_id=none slurm_array_task_id=none
+2026-09-08 16:58:06 | stage evaluate started
+2026-09-08 16:58:06 | task chronos2 comparison=covariate covariate_mode=past_targets target_mode=univariate started
+[2026-09-08 16:58:06] TIME runner: run_chronos2_comparison.sh
+[2026-09-08 16:58:06] datasets: /scratch/users/h61084/datasets/hf_dataset
+[2026-09-08 16:58:06] weights: /scratch/users/h61084/weights
+[2026-09-08 16:58:06] outputs: /scratch/users/h61084/codes/improved/outputs
+[2026-09-08 16:58:06] covariate mode: past_targets
+[2026-09-08 16:58:06] target mode: univariate
+Running all 38 datasets from config:
+  - Water_Quality_Darwin/15T
+  - current_velocity/5T
+  - current_velocity/10T
+  - current_velocity/15T
+  - current_velocity/20T
+  - current_velocity/H
+  - Coastal_T_S/5T
+  - Coastal_T_S/15T
+  - Coastal_T_S/20T
+  - Coastal_T_S/H
+  - SG_Weather/D
+  - SG_PM25/H
+  - NE_China_Wind/H
+  - Australia_Solar/H
+  - OpenElectricity_NEM/5T
+  - EWELD_Load/15T
+  - Port_Activity/D
+  - Port_Activity/W
+  - Global_Influenza/W
+  - Crypto/D
+  - US_Term_Structure/B
+  - Oil_Price/B
+  - Job_Claims/W
+  - Uncertainty_1M/M
+  - Housing_Inventory/M
+  - JOLTS/M
+  - US_Labor/M
+  - Vehicle_Supply/M
+  - WUI_Global/Q
+  - Global_Price/Q
+  - Vehicle_Sales/M
+  - Supply_Chain_Customer/D
+  - Supply_Chain_Location/D
+  - azure2019_D/5T
+  - azure2019_I/5T
+  - azure2019_U/5T
+  - Smart_Manufacturing/H
+  - MetroPT-3/5T
+
+############################################################
+# Dataset 1/38: Water_Quality_Darwin/15T
+############################################################
+Loading configuration...
+
+============================================================
+Dataset: Water_Quality_Darwin/15T
+Model: amazon/chronos-2
+Checkpoint: /fslarge/scratch/users/h61084/weights/chronos2
+Terms: ['short', 'medium', 'long']
+Covariate mode: past_targets
+============================================================
+
+--- Term: short ---
+  Config: prediction_length=16, test_length=1440, val_length=1440
+TIME run allocation action=new run=/fslarge/scratch/users/h61084/codes/improved/outputs/channels_comparison/tasks/covariate/chronos2/univariate/Water_Quality_Darwin/15T/short/run_0 launch_id=selena_channels_20260908T145417Z_18938 slurm_job_id=3227284 launched_at=2026-09-08T14:58:22.001503+00:00
+  Initializing Chronos pipeline (/fslarge/scratch/users/h61084/weights/chronos2)...

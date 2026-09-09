@@ -1,0 +1,9 @@
+2026-09-08 17:44:55 | workflow foundation_models started launch_id=selena_20260908T145416Z_18651 task=timesfm3 slurm_job_id=3227279 slurm_array_job_id=none slurm_array_task_id=none
+2026-09-08 17:44:55 | stage evaluate started
+2026-09-08 17:44:55 | task model=timesfm3 runner=run_timesfm3.sh environment=uv covariate_mode=none target_mode=auto started
+[2026-09-08 17:44:55] TIME runner: run_timesfm3.sh
+[2026-09-08 17:44:55] datasets: /scratch/users/h61084/datasets/hf_dataset
+[2026-09-08 17:44:55] weights: /scratch/users/h61084/weights
+[2026-09-08 17:44:55] outputs: /scratch/users/h61084/codes/improved/outputs
+[2026-09-08 17:44:55] covariate mode: none
+[2026-09-08 17:44:55] target mode: auto
