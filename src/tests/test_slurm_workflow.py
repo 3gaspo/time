@@ -373,7 +373,7 @@ def main() -> None:
     for experiment in (
         "chronos_bolt.py",
         "chronos2.py",
-        "timesfm3.py",
+        "run_timesfm3.py",
         "ts_icl.py",
         "seasonal_naive.py",
     ):

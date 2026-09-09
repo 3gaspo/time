@@ -224,6 +224,8 @@ deliberately.
 
 ## Packaging and documentation repairs
 
+- Renamed the TimesFM-3 experiment entry to `run_timesfm3.py` so direct script
+  execution cannot shadow the installed `timesfm3` package.
 - Removed unused `hydra-core`, `ray`, `orjson`, and `matplotlib` dependencies;
   declared packages imported directly by the common code.
 - Removed the unused Hatch dynamic-version and nonexistent root `config/`
